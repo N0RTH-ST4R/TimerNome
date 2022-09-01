@@ -16,7 +16,27 @@
             margin: 50px auto;
             font-size: 0;
             z-index: 100000;
-        }`;
+        }
+        menuContainer > metro {
+            display: block;
+            width: 500px;
+            max-height: 150px;
+            font-size: 12px;
+            font-family: monospace;
+            overflow-y: auto;
+            color: white;
+            box-sizing: border-box;
+            padding: 5px;
+            position: absolute;
+            bottom: 200px;
+          }`;
+        document.head.appendChild(s);
+        if (!document.querySelector('menuContainer')) {
+            s=document.createElement("menuContainer");
+            var output=document.createElement("metro");
+        }
+            
+
     }
 
-}
+}())
